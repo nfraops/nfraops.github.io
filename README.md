@@ -1,5 +1,10 @@
 # NFRAOPS GitHub.io
 
+[![Build](https://github.com/nfraops/nfraops.github.io/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/nfraops/nfraops.github.io/actions/workflows/mkdocs.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MkDocs](https://img.shields.io/badge/MkDocs-1.6.1-blue.svg)](https://www.mkdocs.org/)
+[![Material](https://img.shields.io/badge/Theme-9.7.6-26A69A.svg)](https://squidfunk.github.io/mkdocs-material/)
+
 GitHub organization website built with MkDocs, featuring a ClickHouse-inspired dark theme.
 
 ## Quick Start

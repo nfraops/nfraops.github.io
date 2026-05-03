@@ -79,6 +79,9 @@ nav:
   - Elements:
       - elements/admonition.md
       - elements/codehilite.md
+      - elements/pymdown.md
+      - elements/footnotes.md
+      - elements/metadata.md
   - About:
       - about.md
 
