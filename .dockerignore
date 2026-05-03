@@ -1,0 +1,42 @@
+# Git
+.git/
+.gitignore
+.github/
+
+# Claude Code
+.claude/
+.kilo/
+.specify/
+specs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+poetry.lock
+
+# MkDocs build
+site/
+public/
+.mkdocs_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*

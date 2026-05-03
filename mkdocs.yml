@@ -1,0 +1,92 @@
+site_name: NFRAOPS
+site_dir: public
+site_url: https://nfraops.github.io
+site_description: NFRAOPS infrastructure documentation and operations resources
+repo_url: https://github.com/nfraops/nfraops.github.io
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+
+  # ClickHouse-inspired palette
+  palette:
+    # Dark mode (primary)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Typography
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+# Plugins
+plugins:
+  - search
+  - plantuml:
+      puml_url: "http://www.plantuml.com/plantuml"
+  - macros
+  - exclude:
+      glob:
+        - diagrams/**/*.py
+  - table-reader
+  - redirects
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# Navigation
+nav:
+  - Home: index.md
+  - Architecture:
+      - architecture/index.md
+      - Decisions: architecture/decisions/index.md
+  - Diagrams:
+      - diagrams/index.md
+      - PlantUML Guide: diagrams/plantuml-guide.md
+  - Elements:
+      - elements/admonition.md
+      - elements/codehilite.md
+  - About:
+      - about.md
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/nfraops
+
+# Copyright
+copyright: Copyright &copy; 2026 NFRAOPS

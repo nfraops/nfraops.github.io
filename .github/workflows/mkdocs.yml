@@ -1,0 +1,43 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: '2.0.1'
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: '.python-version'
+          cache: 'poetry'
+
+      - name: Install dependencies
+        run: poetry install --only-root --with dev
+
+      - name: Build documentation
+        run: poetry run mkdocs build --strict
+
+      - name: Deploy to GitHub Pages
+        run: poetry run mkdocs gh-deploy --force

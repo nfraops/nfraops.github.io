@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mkdocs:
+    build:
+      context: .
+      target: development
+    volumes:
+      # Mount current directory for live reload
+      - .:/app
+      # Cache poetry dependencies
+      - poetry-cache:/root/.cache/pypoetry
+    ports:
+      # Map host port to container port
+      - "8000:8000"
+    environment:
+      # Set MkDocs to watch for file changes
+      - MKDOCS_ENABLE_DEV_MODE=1
+
+volumes:
+  poetry-cache:
