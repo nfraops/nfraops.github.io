@@ -1,0 +1,134 @@
+site_name: NFRAOPS
+site_dir: public
+site_url: https://nfraops.github.io
+site_description: NFRAOPS infrastructure documentation and operations resources
+site_author: NFRAOPS
+repo_url: https://github.com/nfraops/nfraops.github.io
+edit_uri: edit/master/docs/
+
+# Theme configuration
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  icon:
+    logo: material/alert-circle
+    repo: fontawesome/brands/github-alt
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    # Dark mode (default)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: yellow
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+# Plugins
+plugins:
+  - search
+  - plantuml:
+      puml_url: "http://www.plantuml.com/plantuml"
+  - macros
+  - exclude:
+      glob:
+        - diagrams/**/*.py
+  - table-reader
+  - redirects
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# Navigation
+nav:
+  - Home: index.md
+  - Architecture:
+      - architecture/index.md
+      - Decisions: architecture/decisions/index.md
+  - Diagrams:
+      - diagrams/index.md
+      - PlantUML Guide: diagrams/plantuml-guide.md
+  - Elements:
+      - elements/admonition.md
+      - elements/codehilite.md
+      - elements/pymdown.md
+      - elements/footnotes.md
+      - elements/metadata.md
+  - About:
+      - about.md
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/nfraops
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: Thanks for your feedback!
+
+# Custom stylesheets
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Copyright
+copyright: Copyright &copy; 2026 NFRAOPS

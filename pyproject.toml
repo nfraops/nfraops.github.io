@@ -1,0 +1,36 @@
+[project]
+name = "nfraops-github-io"
+version = "0.1.0"
+description = "NFRAOPS GitHub Organization Website"
+authors = [
+    {name = "Vyacheslav Voronenko", email = "git@voronenko.info"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.6",
+    "mkdocs-puml>=2.0.0",
+    "pymdown-extensions>=10.0",
+    "plantuml-markdown>=3.11.0",
+    "mkdocs-macros-plugin>=1.5.0",
+    "mkdocs-table-reader-plugin>=3.1.0",
+    "mkdocs-exclude>=1.0.2",
+    "mkdocs-redirects>=1.2.1",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mkdocs-exclude>=1.0.2",
+    "mkdocs-macros-plugin>=1.5.0",
+    "mkdocs-table-reader-plugin>=3.1.0",
+    "pre-commit>=3.0.0",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+# Development dependencies can be added here if needed
