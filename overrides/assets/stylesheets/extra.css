@@ -1,0 +1,101 @@
+/* ClickHouse-inspired dark theme overrides */
+
+/* Force dark theme by default */
+[data-md-color-scheme="slate"] {
+  /* Pure black background */
+  --md-default-bg-color: #000000 !important;
+  --md-default-fg-color: #ffffff !important;
+
+  /* Neon Volt accent (#faff69) */
+  --md-primary-fg-color: #faff69 !important;
+  --md-accent-fg-color: #faff69 !important;
+
+  /* Link colors */
+  --md-typeset-a-color: #faff69 !important;
+
+  /* Darker shades for hover states */
+  --md-primary-fg-color--dark: #d4cb3a !important;
+  --md-primary-fg-color--light: #fffbb3 !important;
+
+  /* Card borders */
+  --md-default-fg-color--light: #414141 !important;
+
+  /* Code blocks */
+  --md-code-bg-color: #1a1a1a !important;
+  --md-code-fg-color: #faff69 !important;
+
+  /* Header background */
+  --md-header-bg-color: #000000 !important;
+
+  /* Footer */
+  --md-footer-bg-color: #0a0a0a !important;
+  --md-footer-fg-color: #ffffff !important;
+  --md-footer-fg-color--light: #faff69 !important;
+  --md-footer-fg-color--lighter: #d4cb3a !important;
+}
+
+/* Global accent color */
+:root > * {
+  --md-accent-fg-color: #faff69 !important;
+}
+
+/* Typography adjustments */
+:root {
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
+}
+
+/* Ensure header is pure black */
+.md-header {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #414141 !important;
+}
+
+/* Ensure navigation background is black */
+.md-nav {
+  background-color: #000000 !important;
+}
+
+/* Fix code block backgrounds */
+.highlight {
+  background-color: #1a1a1a !important;
+}
+
+/* Fix tables */
+.md-typeset table:not([class]) {
+  background-color: #0a0a0a !important;
+  border-color: #414141 !important;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #1a1a1a !important;
+  color: #faff69 !important;
+}
+
+/* Fix admonitions */
+.md-typeset .admonition {
+  background-color: #0a0a0a !important;
+  border-color: #414141 !important;
+}
+
+/* Fix search */
+.md-search__form {
+  background-color: #0a0a0a !important;
+  border-color: #414141 !important;
+}
+
+.md-search__input {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+}
+
+/* Fix sidebar */
+.md-sidebar {
+  background-color: #000000 !important;
+}
+
+/* Fix tabs */
+.md-tabs {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #414141 !important;
+}

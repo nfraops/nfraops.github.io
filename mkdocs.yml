@@ -9,19 +9,32 @@ theme:
   name: material
   custom_dir: overrides
   language: en
-
-  # ClickHouse-inspired palette
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
   palette:
-    # Dark mode (primary)
+    # Dark mode (default)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
-      accent: custom
+      accent: yellow
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
-  # Typography
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   font:
     text: Inter
     code: JetBrains Mono
@@ -90,6 +103,10 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/nfraops
+
+# Custom stylesheets
+extra_css:
+  - assets/stylesheets/extra.css
 
 # Copyright
 copyright: Copyright &copy; 2026 NFRAOPS
