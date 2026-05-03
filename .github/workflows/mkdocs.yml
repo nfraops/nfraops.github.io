@@ -34,7 +34,7 @@ jobs:
           cache: 'poetry'
 
       - name: Install dependencies
-        run: poetry install --only-root --with dev
+        run: poetry install --with dev
 
       - name: Build documentation
         run: poetry run mkdocs build --strict
