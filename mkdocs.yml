@@ -2,8 +2,18 @@ site_name: NFRAOPS
 site_dir: public
 site_url: https://nfraops.github.io
 site_description: NFRAOPS infrastructure documentation and operations resources
+site_author: NFRAOPS
 repo_url: https://github.com/nfraops/nfraops.github.io
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
+
+# Theme configuration
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  icon:
+    logo: material/alert-circle
+    repo: fontawesome/brands/github-alt
 
 theme:
   name: material
@@ -103,6 +113,18 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/nfraops
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: Thanks for your feedback!
 
 # Custom stylesheets
 extra_css:
