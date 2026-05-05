@@ -2,34 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nfraops.github.io/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/about/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/architecture/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/architecture/decisions/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/diagrams/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/diagrams/plantuml-guide/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/elements/admonition/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
     </url>
     <url>
          <loc>https://nfraops.github.io/elements/codehilite/</loc>
-         <lastmod>2026-05-03</lastmod>
+         <lastmod>2026-05-05</lastmod>
+    </url>
+    <url>
+         <loc>https://nfraops.github.io/elements/footnotes/</loc>
+         <lastmod>2026-05-05</lastmod>
+    </url>
+    <url>
+         <loc>https://nfraops.github.io/elements/metadata/</loc>
+         <lastmod>2026-05-05</lastmod>
+    </url>
+    <url>
+         <loc>https://nfraops.github.io/elements/pymdown/</loc>
+         <lastmod>2026-05-05</lastmod>
     </url>
 </urlset>
